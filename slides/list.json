@@ -1,1 +1,9 @@
-["index.md"]
+[
+    "01-introduction.md",
+    "02-contents.md",
+    "03-simple-requests.md",
+    "04-concurrent-transactional-requests.md",
+    "05-joining-different-databases.md",
+    "06-foreign-data-wrappers.md",
+    "07-improvements.md"
+]
