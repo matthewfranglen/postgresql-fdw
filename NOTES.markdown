@@ -4,12 +4,13 @@ Slides
 
  * Contents
 
- * Simple requests from language to database
+ * Simple Requests
+ - Simple requests from language to database
 
- * Concurrent transactional requests
+ * Concurrent Transactional Requests
  - export the transaction and join in threads
 
- * Joining different databases
+ * Joining Different Databases
  - PostgreSQL to ES / Solr / Kafka / Stripe / arbitrary APIs ...
  - Language as a mediator
  - Foreign Data Wrappers
