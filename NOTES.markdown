@@ -53,3 +53,8 @@ Code Samples
  * Improvements
  - SQL Materialized View
  - Python analyze
+
+Techniques
+
+ * SET TRANSACTION
+ - http://www.postgresql.org/docs/current/static/sql-set-transaction.html
