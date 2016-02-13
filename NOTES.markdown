@@ -29,3 +29,27 @@ Slides
  - External Indicies
  - Import Foreign Schema
  - Analyze
+
+Code Samples
+
+ * Simple Requests
+ - Python
+ - Java
+
+ * Concurrent Transactional Requests
+ - Python
+ - Java
+
+ * Joining Different Databases
+ - Python example with Elastic Search and Postgres
+ - Jave example with same
+
+ * Foreign Data Wrappers
+ - Python read
+ - Python write
+ - C read
+ - C write and bulk write
+
+ * Improvements
+ - SQL Materialized View
+ - Python analyze
