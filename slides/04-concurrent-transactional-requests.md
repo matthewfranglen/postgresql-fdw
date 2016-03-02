@@ -4,7 +4,7 @@ Postgres only uses a single CPU to run a query
 
 Splitting the query runs the risk of the database changing
 
-You can join transactions
+You can share transactions
 
 ---
 
