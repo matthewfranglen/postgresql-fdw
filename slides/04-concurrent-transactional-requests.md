@@ -10,19 +10,15 @@ You can synchronize transactions
 
 ##  Synchronizing Transactions
 
-Start the transaction and export the transaction snapshot
+Start the transaction and export the snapshot
 
     BEGIN TRANSACTION ISOLATION LEVEL REPEATABLE READ;
     SELECT pg_export_snapshot();
 
-You can then synchronize other transactions to the snapshot
+You can then synchronize other transactions
 
     BEGIN TRANSACTION ISOLATION LEVEL REPEATABLE READ;
-    SET TRANSACTION SNAPSHOT 'THE TRANSACTION ID';
-
-Python example in [resources/set-transaction.py](resources/set-transaction.py)
-
-Documentation [in the Postgres manual](http://www.postgresql.org/docs/current/static/functions-admin.html#FUNCTIONS-SNAPSHOT-SYNCHRONIZATION)
+    SET TRANSACTION SNAPSHOT 'THE TRANSACTION SNAPSHOT';
 
 ---
 
@@ -32,15 +28,9 @@ Neat tricks should be used sparingly
 
 Better to improve the tool
 
-The equivalent work done by postgres is more efficient
+Getting the database to do it is more efficient
 
-Extensions exist to improve postgres such as:
-
- * [Parallel Aggregation](http://www.cybertec.at/en/products/agg-parallel-aggregations-postgresql/)
-
- * [Automatic Sharding](https://www.citusdata.com/)
-
- * [Automatic Partitioning](https://github.com/keithf4/pg_partman)
+Many extensions exist to improve performance
 
 ---
 

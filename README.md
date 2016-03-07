@@ -10,6 +10,14 @@ This uses the [Reveal.js](https://github.com/hakimel/reveal.js) HTML Presentatio
 Documentation
 -------------
 
+### Synchronizing Transactions
+
+Python example in [resources/set-transaction.py](resources/set-transaction.py)
+
+Documentation is [here](http://www.postgresql.org/docs/current/static/functions-admin.html#FUNCTIONS-SNAPSHOT-SYNCHRONIZATION)
+
+### Foreign Data Wrappers
+
 Foreign Data Wrapper Documentation is [here](http://www.postgresql.org/docs/current/static/fdwhandler.html)
 
 Query Planning Documentation is [here](http://www.postgresql.org/docs/current/static/fdw-planning.html)
