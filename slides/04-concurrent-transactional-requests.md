@@ -4,18 +4,18 @@ Postgres only uses a single CPU to run a query
 
 Splitting the query runs the risk of the database changing
 
-You can share transactions
+You can synchronize transactions
 
 ---
 
-##  Joining Transactions
+##  Synchronizing Transactions
 
-Start the transaction
+Start the transaction and export the transaction snapshot
 
     BEGIN TRANSACTION ISOLATION LEVEL REPEATABLE READ;
     SELECT pg_export_snapshot();
 
-And join it from another thread
+You can then synchronize other transactions to the snapshot
 
     BEGIN TRANSACTION ISOLATION LEVEL REPEATABLE READ;
     SET TRANSACTION SNAPSHOT 'THE TRANSACTION ID';
@@ -34,11 +34,13 @@ Better to improve the tool
 
 The equivalent work done by postgres is more efficient
 
+Extensions exist to improve postgres such as:
+
  * [Parallel Aggregation](http://www.cybertec.at/en/products/agg-parallel-aggregations-postgresql/)
 
  * [Automatic Sharding](https://www.citusdata.com/)
 
- * ...
+ * [Automatic Partitioning](https://github.com/keithf4/pg_partman)
 
 ---
 
