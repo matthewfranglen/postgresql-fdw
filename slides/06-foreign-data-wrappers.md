@@ -12,13 +12,11 @@ Foreign Data Wrappers are Tables that call methods
 
 The core Foreign Data Wrapper API is written in C
 
-Documentation in [the Postgres Manual](http://www.postgresql.org/docs/current/static/fdwhandler.html)
-
 ---
 
-##  Read a Table
+##  Query a Table
 
-![Scan Flow Chart](resources/fdw-scan.png)
+![Query Flow Chart](resources/fdw-query.png)
 
 WHERE clauses can tell you how to filter
 
@@ -32,7 +30,13 @@ You can compute joins remotely
 
 DELETE and UPDATE read the rows before altering
 
-Documentation in [the Postgres Manual](http://www.postgresql.org/docs/current/static/fdw-planning.html)
+---
+
+##  Scanning a Table
+
+![Scan Flow Chart](resources/fdw-scan.png)
+
+---
 
 ##  Alter a Table
 
