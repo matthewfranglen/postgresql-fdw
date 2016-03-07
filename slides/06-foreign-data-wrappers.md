@@ -56,8 +56,6 @@ Sample remote tables and return statistics
 
 Relation Size method can use the estimates
 
-[Example of using estimated size](https://github.com/laurenz/oracle_fdw/blob/master/oracle_fdw.c#L801-L803)
-
 ---
 
 ##  Writing in C is hard work
