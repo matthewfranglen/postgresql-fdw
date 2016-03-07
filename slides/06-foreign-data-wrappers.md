@@ -18,7 +18,11 @@ The core Foreign Data Wrapper API is written in C
 
 ![Query Flow Chart](resources/fdw-query.png)
 
-WHERE clauses can tell you how to filter
+WHERE clauses tell you how to filter
+
+Can constrain virtual columns to pass data
+
+Postgres validates the WHERE clause by default
 
 ---
 
@@ -36,7 +40,7 @@ DELETE and UPDATE read the rows before altering
 
 ![Scan Flow Chart](resources/fdw-scan.png)
 
-Can batch the request to be made
+Can batch the requests to be made
 
 Trade off first row speed for all row speed?
 
