@@ -12,17 +12,37 @@ Foreign Data Wrappers are Tables that call methods
 
 The core Foreign Data Wrapper API is written in C
 
-http://www.postgresql.org/docs/current/static/fdwhandler.html
+---
+
+##  Query a Table
+
+![Query Flow Chart](resources/fdw-query.png)
+
+WHERE clauses tell you how to filter
+
+Can constrain virtual columns to pass data
+
+Postgres validates the WHERE clause by default
 
 ---
 
-##  Read a Table
+##  Query Planning
+
+![Plan Flow Chart](resources/fdw-plan.png)
+
+You can compute joins remotely
+
+DELETE and UPDATE read the rows before altering
+
+---
+
+##  Scanning a Table
 
 ![Scan Flow Chart](resources/fdw-scan.png)
 
-WHERE clauses can tell you how to filter
+Can batch the requests to be made
 
-You can compute joins remotely
+Trade off first row speed for all row speed?
 
 ---
 
@@ -34,7 +54,7 @@ You can compute joins remotely
 
 ##  Import Foreign Schema
 
-Can get the CREATE FOREIGN TABLE statements required
+Just return CREATE FOREIGN TABLE statements
 
 ---
 
@@ -43,8 +63,6 @@ Can get the CREATE FOREIGN TABLE statements required
 Sample remote tables and return statistics
 
 Relation Size method can use the estimates
-
-[Example of using estimated size](https://github.com/laurenz/oracle_fdw/blob/master/oracle_fdw.c#L801-L803)
 
 ---
 
