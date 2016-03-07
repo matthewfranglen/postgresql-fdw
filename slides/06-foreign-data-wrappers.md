@@ -36,6 +36,10 @@ DELETE and UPDATE read the rows before altering
 
 ![Scan Flow Chart](resources/fdw-scan.png)
 
+Can batch the request to be made
+
+Trade off first row speed for all row speed?
+
 ---
 
 ##  Alter a Table
@@ -46,7 +50,7 @@ DELETE and UPDATE read the rows before altering
 
 ##  Import Foreign Schema
 
-Can get the CREATE FOREIGN TABLE statements required
+Just return CREATE FOREIGN TABLE statements
 
 ---
 
