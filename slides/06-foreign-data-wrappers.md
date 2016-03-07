@@ -12,7 +12,7 @@ Foreign Data Wrappers are Tables that call methods
 
 The core Foreign Data Wrapper API is written in C
 
-http://www.postgresql.org/docs/current/static/fdwhandler.html
+Documentation in [the Postgres Manual](http://www.postgresql.org/docs/current/static/fdwhandler.html)
 
 ---
 
@@ -22,9 +22,17 @@ http://www.postgresql.org/docs/current/static/fdwhandler.html
 
 WHERE clauses can tell you how to filter
 
+---
+
+##  Query Planning
+
+![Plan Flow Chart](resources/fdw-plan.png)
+
 You can compute joins remotely
 
----
+DELETE and UPDATE read the rows before altering
+
+Documentation in [the Postgres Manual](http://www.postgresql.org/docs/current/static/fdw-planning.html)
 
 ##  Alter a Table
 
