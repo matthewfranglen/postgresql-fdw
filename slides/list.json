@@ -5,5 +5,7 @@
     ["04-concurrent-transactional-requests.md"],
     ["05-joining-different-databases.md"],
     ["06-foreign-data-wrappers.md"],
-    ["07-improvements.md"]
+    ["07-python-multicorn.md"],
+    ["08-services-are-data.md"],
+    ["09-conclusion.md"]
 ]
