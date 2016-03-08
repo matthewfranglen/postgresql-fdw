@@ -1,11 +1,11 @@
 ##  Contents
 
- * Querying from a Language
+ * Querying from a language
 
  * Querying multiple databases
 
- * Pushing complexity into the Database
+ * Pushing complexity into the database
 
  * Foreign Data Wrappers
 
- * Considerations
+ * Services

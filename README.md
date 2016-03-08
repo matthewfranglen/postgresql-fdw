@@ -23,3 +23,7 @@ Foreign Data Wrapper Documentation is [here](http://www.postgresql.org/docs/curr
 Query Planning Documentation is [here](http://www.postgresql.org/docs/current/static/fdw-planning.html)
 
 Example of estimating size based on ANALYZE stats is [here](https://github.com/laurenz/oracle_fdw/blob/master/oracle_fdw.c#L801-L803)
+
+### Python Multicorn
+
+Python Multicorn Documentation is [here](http://multicorn.org/implementing-an-fdw/) and API Documentation is [here](http://multicorn.readthedocs.org/en/latest/api.html)
