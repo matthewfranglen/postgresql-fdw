@@ -27,10 +27,3 @@ Exceeding a rate limit is easy
 Querying a MATERIALIZED VIEW can solve this
 
 Or just copying the data to another table
-
----
-
-Materialized views
-External Indicies
-Import Foreign Schema
-Analyze
