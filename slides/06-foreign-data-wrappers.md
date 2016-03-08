@@ -26,6 +26,22 @@ Postgres validates the WHERE clause by default
 
 ---
 
+##  WHERE Clauses
+
+WHERE clauses are useful for passing information
+
+```sql
+SELECT * FROM fdw_table WHERE query = 'title:psql AND rank:[50 TO *]';
+```
+
+Provide queries as conditions on virtual columns
+
+Every returned row must match the constraint
+
+Add the virtual column value to the results
+
+---
+
 ##  Query Planning
 
 ![Plan Flow Chart](resources/fdw-plan.png)

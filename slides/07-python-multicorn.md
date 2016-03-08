@@ -48,20 +48,3 @@ Writing Foreign Data Wrappers with Python is fast
 Most data stores have excellent Python Libraries
 
 Performance critical wrappers should be rewritten in C
-
----
-
-##  WHERE Clauses
-
-WHERE clauses are useful for passing information
-
-```sql
-SELECT * FROM fdw_table WHERE query = 'title:psql AND rank:[50 TO *]';
-```
-
-Provide queries as conditions on virtual columns
-
-Every returned row must match the constraint
-
-Add the virtual column value to the results
-
