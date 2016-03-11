@@ -2,10 +2,9 @@
     ["01-introduction.md"],
     ["02-contents.md"],
     ["03-simple-requests.md"],
-    ["04-concurrent-transactional-requests.md"],
-    ["05-joining-different-databases.md"],
-    ["06-foreign-data-wrappers.md"],
-    ["07-python-multicorn.md"],
-    ["08-services-are-data.md"],
-    ["09-conclusion.md"]
+    ["04-joining-different-databases.md"],
+    ["05-foreign-data-wrappers.md"],
+    ["06-python-multicorn.md"],
+    ["07-services-are-data.md"],
+    ["08-conclusion.md"]
 ]
