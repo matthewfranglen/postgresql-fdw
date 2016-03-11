@@ -4,7 +4,9 @@ You can write your Foreign Data Wrapper in Python
 
 Well documented
 
-Easier and quicker
+Easier
+
+Quicker
 
 ---
 
@@ -37,7 +39,8 @@ The Multicorn Wrapper is not complete
 
  * No JOIN paths
 
- * Postgres always checks WHERE clauses
+ * Postgres always checks WHERE clauses<br>
+<small>(just add a passing value to the results)</small>
 
 ---
 
