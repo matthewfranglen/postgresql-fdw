@@ -27,3 +27,13 @@ Exceeding a rate limit is easy
 Querying a MATERIALIZED VIEW can solve this
 
 Or just copying the data to another table
+
+---
+
+##  Changing Data
+
+Foreign Data Wrappers can be the target of TRIGGERs
+
+Keep your services up to date
+
+Your database can invalidate your cache entries
