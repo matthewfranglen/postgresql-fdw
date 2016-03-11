@@ -1,10 +1,10 @@
 ##  Foreign Data Wrappers
 
-Data in Postgres comes from Tables
+Data in Postgres is in Tables
 
 Queries get data from Tables
 
-Foreign Data Wrappers are Tables that call methods
+Foreign Data Wrappers are Tables that call Methods
 
 ---
 
@@ -18,11 +18,9 @@ The core Foreign Data Wrapper API is written in C
 
 ![Query Flow Chart](resources/fdw-query.png)
 
-WHERE clauses tell you how to filter
+Each step is a method call
 
-Can constrain virtual columns to pass data
-
-Postgres validates the WHERE clause by default
+Iterate returns one row at a time
 
 ---
 
@@ -31,14 +29,14 @@ Postgres validates the WHERE clause by default
 WHERE clauses are useful for passing information
 
 ```sql
-SELECT * FROM fdw_table WHERE query = 'title:psql AND rank:[50 TO *]';
+SELECT * FROM fdw_solr WHERE t_query = 'title:psql AND rank:[50 TO *]';
 ```
 
 Provide queries as conditions on virtual columns
 
 Every returned row must match the constraint
 
-Add the virtual column value to the results
+Just add the condition value to the results
 
 ---
 
@@ -56,6 +54,8 @@ DELETE and UPDATE read the rows before altering
 
 ![Scan Flow Chart](resources/fdw-scan.png)
 
+Iterate is called until it returns NULL
+
 Can batch the requests to be made
 
 Trade off first row speed for all row speed?
@@ -68,13 +68,19 @@ Trade off first row speed for all row speed?
 
 ---
 
-##  Import Foreign Schema
+##  Create a Table
+
+The special command CREATE FOREIGN TABLE is used
+
+You can use OPTIONS to configure the table
+
+Implement IMPORT FOREIGN SCHEMA for bulk creation
 
 Just return CREATE FOREIGN TABLE statements
 
 ---
 
-##  Analyzing Foreign Tables
+##  Analyze a Table
 
 Sample remote tables and return statistics
 
@@ -82,9 +88,8 @@ Relation Size method can use the estimates
 
 ---
 
-##  Writing in C is hard work
+##  C is hard work
 
 There are APIs written in other languages
 
 C will always be capable of the best performance
-
