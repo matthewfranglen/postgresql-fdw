@@ -1,10 +1,12 @@
-##  Joining Different Databases
+##  Limitations
 
-Eventually your data outgrows your database
+The way that data is stored
 
-You have to join across different databases
+And the way it is manipulated
 
-These don't all have to be postgres
+Limit how fast certain queries can run
+
+Different arrangements have different performance
 
 ---
 
@@ -19,6 +21,16 @@ Specific tools can better serve specific needs
  * Message Distribution
 
  * Horizontal Scaling
+
+---
+
+##  Joining Different Databases
+
+If you view the Application as the data controller
+
+And the different databases as the data sources
+
+Then it is natural to join different data sources in the Application
 
 ---
 
