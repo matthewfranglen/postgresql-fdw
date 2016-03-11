@@ -34,9 +34,9 @@ SELECT * FROM fdw_solr WHERE t_query = 'title:psql AND rank:[50 TO *]';
 
 Provide queries as conditions on virtual columns
 
-Every returned row must match the constraint
+By default Postgres checks the WHERE clause
 
-Just add the condition value to the results
+You can drop the check on specific clauses
 
 ---
 
