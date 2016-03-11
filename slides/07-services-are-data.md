@@ -28,6 +28,8 @@ Querying a MATERIALIZED VIEW can solve this
 
 Or just copying the data to another table
 
+Make sure to periodically refresh
+
 ---
 
 ##  Changing Data
