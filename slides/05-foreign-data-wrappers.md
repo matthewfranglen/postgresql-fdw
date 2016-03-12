@@ -6,6 +6,10 @@ Queries get data from Tables
 
 Foreign Data Wrappers are Tables that call Methods
 
+Note:
+
+This is the second way of communication, the database talking back
+
 ---
 
 ##  Postgres is written in C

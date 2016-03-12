@@ -9,6 +9,10 @@ Its easy to pull data from the database
 
 An ORM can make it practically invisible
 
+Note:
+
+This is the normal way to do things
+
 ---
 
 ##  Make it Faster
@@ -37,6 +41,12 @@ You can then synchronize other transactions
 
 With care you can split your query into parts
 
+Note:
+
+This is how pgdump works.
+
+The query can be very difficult to split.
+
 ---
 
 ##  Postgres Progression
@@ -47,12 +57,10 @@ Getting the database to do it is more efficient
 
 Many techniques and extensions exist to improve performance
 
----
+Note:
 
-##  Limitations
+Parallel Aggregation is possible
 
-Eventually your demands become too much
+Sharding and Partitioning can affect how fast queries are
 
-Other tools may be more limited
-
-But they can do specific tasks faster
+There are many approaches
