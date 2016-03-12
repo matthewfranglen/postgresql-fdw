@@ -1,1 +1,10 @@
-["index.md"]
+[
+    ["01-introduction.md"],
+    ["02-contents.md"],
+    ["03-simple-requests.md"],
+    ["04-joining-different-databases.md"],
+    ["05-foreign-data-wrappers.md"],
+    ["06-python-multicorn.md"],
+    ["07-services-are-data.md"],
+    ["08-conclusion.md"]
+]
