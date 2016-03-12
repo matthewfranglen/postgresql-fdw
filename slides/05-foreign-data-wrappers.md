@@ -70,6 +70,10 @@ Trade off first row speed for all row speed?
 
 ![Alter Flow Chart](resources/fdw-alter.png)
 
+Implementing the callbacks provides the functionality
+
+Can restrict the tables that a method can alter
+
 ---
 
 ##  Create a Table
