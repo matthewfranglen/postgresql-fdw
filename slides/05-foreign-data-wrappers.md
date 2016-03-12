@@ -74,6 +74,10 @@ Implementing the callbacks provides the functionality
 
 Can restrict the tables that a method can alter
 
+Note:
+
+The Query Plan slide shows that the plan is modified for updates and deletes
+
 ---
 
 ##  Create Table
