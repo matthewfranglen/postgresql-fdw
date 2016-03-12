@@ -8,6 +8,10 @@ Limit how fast certain queries can run
 
 Different arrangements have different performance
 
+Note:
+
+No one way is best
+
 ---
 
 ##  The Right Tool
@@ -22,6 +26,10 @@ Specific tools can better serve specific needs
 
  * Horizontal Scaling
 
+Note:
+
+There are many more aspects which are affected by this choice
+
 ---
 
 ##  Joining Different Databases
@@ -31,6 +39,10 @@ If you view the Application as the data controller
 And the different databases as the data sources
 
 Then it is natural to join different data sources in the Application
+
+Note:
+
+A dumb bucket for bits
 
 ---
 
