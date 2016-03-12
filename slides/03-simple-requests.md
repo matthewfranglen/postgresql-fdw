@@ -45,7 +45,9 @@ Note:
 
 This is how pgdump works.
 
-The query can be very difficult to split.
+For pgdump this is a great approach as pgdump sequentially scans all tables.
+
+There are few queries that are in the spirit of postgres that benefit from this.
 
 ---
 
