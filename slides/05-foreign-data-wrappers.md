@@ -18,7 +18,7 @@ The core Foreign Data Wrapper API is written in C
 
 ---
 
-##  Query a Table
+##  Query Table
 
 ![Query Flow Chart](resources/fdw-query.png)
 
@@ -54,7 +54,7 @@ DELETE and UPDATE read the rows before altering
 
 ---
 
-##  Scanning a Table
+##  Scan Table
 
 ![Scan Flow Chart](resources/fdw-scan.png)
 
@@ -66,7 +66,7 @@ Trade off first row speed for all row speed?
 
 ---
 
-##  Alter a Table
+##  Alter Table
 
 ![Alter Flow Chart](resources/fdw-alter.png)
 
@@ -76,7 +76,7 @@ Can restrict the tables that a method can alter
 
 ---
 
-##  Create a Table
+##  Create Table
 
 The special command CREATE FOREIGN TABLE is used
 
@@ -88,7 +88,7 @@ Just return CREATE FOREIGN TABLE statements
 
 ---
 
-##  Analyze a Table
+##  Analyze Table
 
 Sample remote tables and return statistics
 
